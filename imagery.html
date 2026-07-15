@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imagery System — FusionX Design System</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> FusionX Design System</div>
+    <nav class="site-nav">
+      <a href="index.html">Overview</a>
+      <a href="colors.html">Color</a>
+      <a href="icons.html">Icons</a>
+      <a href="imagery.html" class="active">Imagery</a>
+    </nav>
+    <span class="badge">v0.1 · Draft</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Imagery System</span>
+      <h1>Abstract by default. Real where it needs to be trusted.</h1>
+      <p class="lede">One direction — the hero/cover treatment — is tested and confirmed. Section dividers and data-viz backgrounds follow the same construction logic but aren't yet generated as a full set.</p>
+    </section>
+
+    <section>
+      <h2>Core rule</h2>
+      <p>Split imagery into two categories and never blend them:</p>
+      <ul class="plain">
+        <li><strong>Decoration</strong> (covers, dividers, backgrounds) — abstract, geometric, data-derived. Never stock photography, never literal hardware rendered as art, never gradients or glow/bloom.</li>
+        <li><strong>Credibility</strong> (data centers, control rooms, engineers at work) — documentary photography of actual environments. Never staged, never stock/lifestyle.</li>
+      </ul>
+      <p>This split holds across every collateral type — what changes is how much of each you use, and how bold or restrained.</p>
+    </section>
+
+    <section>
+      <h2>Imagery by collateral type</h2>
+      <table>
+        <tr><th>Type</th><th>Cover</th><th>Interior</th><th>Photography?</th></tr>
+        <tr><td>Buyer / Solution Brief</td><td>Full hero terrain treatment — flagship</td><td>Simplified fragment dividers, subtle data-viz behind charts</td><td>Rare — grounding only</td></tr>
+        <tr><td>Sales Deck</td><td>Scaled/simplified hero on title slide</td><td>Content slides mostly imagery-free</td><td>Yes — builds live rapport</td></tr>
+        <tr><td>Product Brochure</td><td>Same hero as briefs</td><td>Mix of abstract + real photography</td><td>Yes, deliberately</td></tr>
+        <tr><td>White Paper</td><td>Calmer, more neutral/white</td><td>Data-viz backgrounds primary</td><td>Uncommon</td></tr>
+        <tr><td>Case Study</td><td>Light abstract touch only</td><td>Real customer environment dominates</td><td>Yes, primary driver</td></tr>
+        <tr><td>Data Sheet</td><td>Minimal to none</td><td>Data-viz texture only</td><td>No</td></tr>
+        <tr><td>Event / Social</td><td>Boldest, most cropped fragment</td><td>Single-image assets</td><td>Rare</td></tr>
+        <tr><td>Web Landing Page</td><td>Full hero, eventually motion</td><td>More generous, scroll-revealed</td><td>Same as brochures</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Generative prompt scaffold</h2>
+      <p>Every prompt is built from the same six slots, in order — consistency comes from the scaffold, not the wording.</p>
+      <pre>[SUBJECT/FORM]      mesh, wireframe lattice, node network, layered plane
+[CONSTRUCTION]      isometric / flat 2D / thin-line wireframe / faceted low-poly
+[PALETTE]           exact hex values, max 2-3 colors + dark background
+[LINE TREATMENT]    stroke weight, opacity, glow behavior
+[COMPOSITION]       placement, density, negative space
+[NEGATIVE CONSTRAINTS] explicit exclusions</pre>
+      <p>Standing negative constraints, every prompt:</p>
+      <pre>no gradients, no glassmorphism, no drop shadows, no literal hardware
+(no servers, racks, chips, cables, gears), no photorealistic rendering,
+no people, no stock-photo aesthetic, no glossy/plastic surfaces</pre>
+    </section>
+
+    <section>
+      <h2>Confirmed direction — hero / cover</h2>
+      <p>Layered wireframe terrain ridges, tonal gradation from white/pale neutral at the far ridges into FusionX Lime (<code>#6EE600</code>) at the nearest ridge. Tonal gradation — not flat color — is what reads as premium and restrained; a single fully-saturated green mesh reads generic (confirmed anti-pattern from an earlier test). Terrain occupies the bottom 35–40% of frame with generous negative space above for logo/headline.</p>
+      <p>Section dividers and data-viz backgrounds follow the same negative-constraint logic at lower visual weight — dividers use a single simplified fragment, data-viz backgrounds sit at 10–15% opacity so they recede behind charts instead of competing.</p>
+    </section>
+
+    <section>
+      <h2>Asset library taxonomy</h2>
+      <p>Once generation scales up, saved assets live in <code>/assets/images/</code> following this structure — folders are already scaffolded in this repo:</p>
+      <pre>/assets/images/
+  /hero-cover/          fusionx-[brief-name]-cover-v[n]
+  /section-divider/     fusionx-[brief-name]-divider-[section#]-v[n]
+  /dataviz-background/  fusionx-[brief-name]-dataviz-bg-v[n]
+  /rejected/             off-brand generations kept as reference</pre>
+      <p>Keep a running log of which exact prompt produced which kept asset — that's what makes this reusable across briefs instead of starting from zero each time.</p>
+    </section>
+
+    <section>
+      <h2>Still open</h2>
+      <p>Icon library, illustration library, and photography library are all on the roadmap but don't exist as built asset libraries yet. Icon system is the next priority (see <a href="icons.html">Icons page</a>) since it's referenced across nearly every collateral type above but has no built example yet.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Diamanti FusionX Publishing System — v1.0 draft, last updated July 2026.
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "recommendedSource": "Lucide (MIT license) — https://lucide.dev",
+  "grid": "24x24, 2px padding",
+  "stroke": "1.5-2px, rounded caps/joins",
+  "categories": [
+    {
+      "name": "Infrastructure / Product",
+      "icons": [
+        { "name": "Kubernetes / Container", "status": "planned" },
+        { "name": "Compute", "status": "planned" },
+        { "name": "Storage", "status": "planned" },
+        { "name": "Network", "status": "planned" },
+        { "name": "Cloud", "status": "planned" },
+        { "name": "Hybrid / Multi-cloud", "status": "planned" },
+        { "name": "Security / Shield", "status": "planned" },
+        { "name": "AI / ML", "status": "planned" },
+        { "name": "Automation / GitOps", "status": "planned" },
+        { "name": "Monitoring / Observability", "status": "planned" },
+        { "name": "Scale / Elasticity", "status": "planned" },
+        { "name": "Data Pipeline", "status": "planned" },
+        { "name": "API / Integration", "status": "planned" },
+        { "name": "Uptime / Reliability", "status": "planned" },
+        { "name": "Cost / Efficiency", "status": "planned" }
+      ]
+    },
+    {
+      "name": "Status",
+      "icons": [
+        { "name": "Success / Checkmark", "status": "planned" },
+        { "name": "Warning", "status": "planned" },
+        { "name": "Error", "status": "planned" },
+        { "name": "Info", "status": "planned" }
+      ]
+    },
+    {
+      "name": "Generic UI / Document Furniture",
+      "icons": [
+        { "name": "Arrow (multi-direction)", "status": "planned" },
+        { "name": "External Link", "status": "planned" },
+        { "name": "Download", "status": "planned" },
+        { "name": "Expand / Collapse", "status": "planned" },
+        { "name": "Quote Mark", "status": "planned" },
+        { "name": "Close / Dismiss", "status": "planned" }
+      ]
+    }
+  ]
+}

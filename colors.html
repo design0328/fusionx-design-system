@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Tokens — FusionX Design System</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> FusionX Design System</div>
+    <nav class="site-nav">
+      <a href="index.html">Overview</a>
+      <a href="colors.html" class="active">Color</a>
+      <a href="icons.html">Icons</a>
+      <a href="imagery.html">Imagery</a>
+    </nav>
+    <span class="badge">v1.0 · Locked</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Color Tokens</span>
+      <h1>44 tokens, verified against the source library.</h1>
+      <p class="lede">Source of truth: <code>Diamanti-FusionX-Color-Library-2026.cclibs</code> — load it directly in InDesign/Illustrator rather than typing hex values by hand. Click any swatch below to copy its hex. Edit <code>data/tokens.json</code> to change a value here — every reference to it updates automatically.</p>
+    </section>
+
+    <div id="token-groups">
+      <p>Loading tokens…</p>
+    </div>
+
+    <section>
+      <h2>Working in RGB vs. CMYK</h2>
+      <p>All FusionX Brief Series work is HTML/CSS → PDF (digital-first). Build swatches in <strong>RGB mode</strong>, not CMYK — CMYK round-tripping causes near-black values like <code>#050809</code> to drift on reimport, enough to visibly mismatch generated imagery and document backgrounds. If a piece needs offset print production, document a deliberate CMYK equivalent alongside the RGB source rather than letting software auto-convert.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Diamanti FusionX Publishing System — v1.0 draft, last updated July 2026.
+  </div>
+</footer>
+
+<script src="assets/js/tokens.js"></script>
+</body>
+</html>

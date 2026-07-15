@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FusionX Design System</title>
+<meta name="description" content="Diamanti FusionX — living design system: color tokens, icon system, imagery language.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> FusionX Design System</div>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Overview</a>
+      <a href="colors.html">Color</a>
+      <a href="icons.html">Icons</a>
+      <a href="imagery.html">Imagery</a>
+    </nav>
+    <span class="badge">v1.0 · Draft</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Diamanti · FusionX Publishing System</span>
+      <h1>A living design system for FusionX collateral.</h1>
+      <p class="lede">This site is the single source of truth for FusionX's color, icon, and imagery language — built to evolve in place. Edit the source, push to GitHub, the site updates. Nothing here is final; it's a proposal for how we standardize going forward.</p>
+    </section>
+
+    <section>
+      <h2>Why this exists</h2>
+      <p>FusionX collateral — buyer briefs, solution briefs, decks, data sheets — was being produced piece by piece without a shared source of truth. That surfaced the same questions on every new document: which black? which blue? what kind of image belongs on a cover vs. a data sheet? This system answers those questions once instead of re-deciding them per document.</p>
+      <p>Nobody asked for a formal design system. The work of producing consistent collateral kept surfacing the need for one. Treat this as a starting proposal — flag anything that doesn't match how you're already working.</p>
+    </section>
+
+    <section>
+      <h2>What's here</h2>
+      <div class="grid grid-3">
+        <a class="card" href="colors.html" style="text-decoration:none;color:inherit;">
+          <h3>Color Tokens</h3>
+          <p style="margin-bottom:0">44 tokens, verified against the source library. Click any swatch to copy its hex.</p>
+        </a>
+        <a class="card" href="icons.html" style="text-decoration:none;color:inherit;">
+          <h3>Icon System</h3>
+          <p style="margin-bottom:0">Spec, rules, and a ~25-icon inventory. Proposed direction — nothing built yet.</p>
+        </a>
+        <a class="card" href="imagery.html" style="text-decoration:none;color:inherit;">
+          <h3>Imagery System</h3>
+          <p style="margin-bottom:0">Prompt templates for the abstract/generative layer, plus a collateral-type imagery matrix.</p>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Brand architecture</h2>
+      <p>Diamanti is the corporate brand and stays as-is. FusionX is the product/publishing language sitting underneath it — not a rebrand, a distinct system. The two color palettes are deliberately kept separate; don't cross-pollinate them even where a hex value happens to coincide.</p>
+    </section>
+
+    <section>
+      <h2>Design philosophy</h2>
+      <p>Enterprise-first, technical without being cold, modern minimalism, modular, scalable. Concretely: dark-mode-forward, restrained use of accent color, abstract/geometric imagery for decoration and real documentary photography only where credibility matters — never stock, never literal hardware rendered as art.</p>
+    </section>
+
+    <section>
+      <h2>How to evolve this system</h2>
+      <p>Everything on this site renders from the JSON files in <code>/data</code>. To change a color or update icon status, edit the JSON — every page referencing it updates automatically, no HTML editing required. To add a new page or section, follow the pattern in the existing HTML files. See the repo <code>README.md</code> for the full workflow, including local preview and publishing to GitHub Pages.</p>
+    </section>
+
+    <section>
+      <h2>Still open</h2>
+      <ul class="plain">
+        <li>Icon library — spec is done, nothing built. Proposed: adapt Lucide (open-source) rather than hand-drawing or generating from scratch.</li>
+        <li>Illustration/photography library — direction defined, no asset library yet.</li>
+        <li>Figma component library, code-level design tokens, motion language, accessibility guidance, web visual parity — not started.</li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Diamanti FusionX Publishing System — v1.0 draft, last updated July 2026. Owner: Denky Begonja.
+  </div>
+</footer>
+
+</body>
+</html>

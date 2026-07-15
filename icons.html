@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icon System — FusionX Design System</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> FusionX Design System</div>
+    <nav class="site-nav">
+      <a href="index.html">Overview</a>
+      <a href="colors.html">Color</a>
+      <a href="icons.html" class="active">Icons</a>
+      <a href="imagery.html">Imagery</a>
+    </nav>
+    <span class="badge">v1.0 · Proposed</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Icon System</span>
+      <h1>Spec and inventory — nothing built yet.</h1>
+      <p class="lede">This page is a proposal, not a shipped asset library. <span id="icon-progress" class="mono"></span> — tracked live from <code>data/icons.json</code>. Flip an icon's status to "built" as the library gets produced and this page updates automatically.</p>
+    </section>
+
+    <div class="status-banner">⚠ Proposed direction — confirm before build starts</div>
+
+    <section>
+      <h2>Why icons get their own spec</h2>
+      <p>Hero/cover imagery is expressive and can tolerate some looseness — it's decoration. Icons are functional: read at 24–48px, sitting next to body copy, needing to stay perfectly consistent stroke-to-stroke across 30–50+ symbols. That's a vector-precision problem, not a generative one — AI image generation would hit the same control issues seen on early hero-image tests, at a scale where it's far more visible.</p>
+    </section>
+
+    <section>
+      <h2>Design rules</h2>
+      <table>
+        <tr><th>Grid</th><td>24×24px artboard, 2px padding on all sides — matches Lucide, Radix Icons, Feather</td></tr>
+        <tr><th>Stroke</th><td>1.5–2px, consistent across the entire set — pick one weight and never mix</td></tr>
+        <tr><th>Caps / joins</th><td>Rounded, to match the softness of the hero imagery's linework</td></tr>
+        <tr><th>Style</th><td>Outline/line-art only — no filled icons, no duotone, no mixed fill+stroke</td></tr>
+        <tr><th>Color</th><td>Single color per icon. FusionX Lime for primary/active, Secondary Text token for neutral/inactive. Status tokens only on status-specific icons — never blend into a feature icon</td></tr>
+        <tr><th>Effects</th><td>No gradients, no shadows, no glow</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Recommended production method</h2>
+      <p>Don't hand-draw 25 icons from scratch, and don't generate them with AI tools. Fastest path to a consistent, professional set: start from an open-source icon library built on this exact philosophy and restyle it to FusionX's stroke weight and color tokens.</p>
+      <p><strong>Lucide</strong> (MIT license, free, 1000+ icons, fork of Feather Icons) is the strongest starting point — pull the icons needed, adjust stroke/color to the tokens on the <a href="colors.html">Color page</a>, and hand-draw only the infrastructure-specific concepts a generic UI set won't have (Kubernetes, hybrid-cloud, GitOps).</p>
+    </section>
+
+    <section>
+      <h2>Inventory (~25 icons, first pass)</h2>
+      <div id="icon-categories">
+        <p>Loading inventory…</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Diamanti FusionX Publishing System — v1.0 draft, last updated July 2026.
+  </div>
+</footer>
+
+<script src="assets/js/icons.js"></script>
+</body>
+</html>
