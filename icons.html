@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Libre+Franklin:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -18,10 +18,11 @@
     <nav class="site-nav">
       <a href="index.html">Overview</a>
       <a href="colors.html">Color</a>
+      <a href="typography.html">Type</a>
       <a href="icons.html" class="active">Icons</a>
       <a href="imagery.html">Imagery</a>
     </nav>
-    <span class="badge">v1.1 · 24 / 25 built</span>
+    <span class="badge">v1.2 · 70 / 71 built</span>
   </div>
 </header>
 
@@ -34,7 +35,7 @@
       <p class="lede"><span id="icon-progress" class="mono"></span> — tracked live from <code>data/icons.json</code>. Click any built icon below to copy its SVG markup; the same files also live in <code>assets/icons/</code> for direct import into InDesign or Figma. Still a first pass — treat as ready to use, not final polish.</p>
     </section>
 
-    <div class="status-banner status-banner--success">✓ 24 of 25 icons built · 1 needs custom drawing (see inventory)</div>
+    <div class="status-banner status-banner--success">✓ 70 of 71 icons built · 1 needs custom drawing (see inventory)</div>
 
     <section>
       <h2>Why icons get their own spec</h2>
@@ -56,12 +57,12 @@
     <section>
       <h2>Production method</h2>
       <p>Sourced from <strong>Lucide</strong> (ISC license — free for commercial use, no attribution required, ~1,700 icons, a maintained fork of Feather Icons) rather than hand-drawn or AI-generated. Each matched icon was pulled from the <code>lucide-static</code> package, stripped of its default class/license comment, and had its stroke weight standardized from Lucide's default 2px down to 1.5px to match the FusionX spec — one consistent weight across the set, per the design rules above.</p>
-      <p>Icons render inline via <code>currentColor</code>, so the same file can show as Lime, Secondary Text, or a Status color just by the CSS class wrapping it — no separate colored copies needed for web/HTML collateral. For InDesign, place the raw file from <code>assets/icons/</code>, ungroup, and apply a stroke swatch from the color library directly, since these are stroke-only paths with no fill.</p>
+      <p>Icons render inline via <code>currentColor</code>, so the same file can show as Lime, Secondary Text, or a Status color just by the CSS class wrapping it — no separate colored copies needed for web/HTML collateral. <strong>This does not work in InDesign</strong> — <code>currentColor</code> is a browser/CSS concept with no equivalent there, so InDesign resolves it to a static black with no live link back to a swatch, and you can't recolor it through the Swatches panel like a native shape. For InDesign (or any placement outside a browser), use the pre-baked color variant folders instead: <code>assets/icons/on-dark/</code> (#F7F7F7, for dark or accent backgrounds), <code>assets/icons/on-light/</code> (#4D4D4D, for light backgrounds), and <code>assets/icons/accent-green/</code> (#6EE600, for brand-accent emphasis) — same filenames as the base set, color already fixed in the file, so InDesign just reads it correctly on place.</p>
       <p>One concept — <strong>Hybrid / Multi-cloud</strong> — has no direct Lucide equivalent and still needs hand-drawing on the same grid/stroke spec, along with a literal Kubernetes mark if brand-accurate K8s iconography is ever required (the current "Kubernetes / Container" entry uses a generic container glyph as a placeholder, not the K8s logo).</p>
     </section>
 
     <section>
-      <h2>Inventory (~25 icons, first pass)</h2>
+      <h2>Inventory (~71 icons)</h2>
       <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:-8px;">Click a built icon to copy its SVG markup. Hover for a note where one applies.</p>
       <div id="icon-categories">
         <p>Loading inventory…</p>
