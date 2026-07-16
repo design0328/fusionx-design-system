@@ -244,6 +244,10 @@ footer.site-footer {
 .swatch-fill {
   height: 88px;
   width: 100%;
+  /* Inset ring independent of the swatch's own hue — without this, near-black
+     swatches (e.g. Brand Black #040708) visually disappear into the page's
+     dark chrome and near-white ones bleed into light card backgrounds. */
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
 .swatch-meta {
@@ -288,13 +292,50 @@ footer.site-footer {
 .icon-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 10px;
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: 8px;
-  padding: 10px 14px;
+  padding: 8px 14px 8px 10px;
   font-size: 0.88rem;
+}
+
+.icon-row--copyable {
+  cursor: pointer;
+  transition: border-color 0.12s, transform 0.12s;
+}
+.icon-row--copyable:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.icon-row-name {
+  flex: 1;
+}
+
+.icon-glyph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: var(--text-secondary);
+}
+.icon-row--copyable:hover .icon-glyph {
+  color: var(--accent);
+}
+.icon-glyph svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-glyph--empty {
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
 }
 
 .status-pill {
@@ -365,6 +406,11 @@ pre {
   border-radius: 6px;
   padding: 6px 12px;
   margin-bottom: 24px;
+}
+
+.status-banner--success {
+  color: var(--success);
+  border-color: var(--success);
 }
 
 ul.plain {

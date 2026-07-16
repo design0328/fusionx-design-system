@@ -1,47 +1,174 @@
 {
-  "recommendedSource": "Lucide (MIT license) — https://lucide.dev",
+  "recommendedSource": "Lucide (ISC license) \u2014 https://lucide.dev",
   "grid": "24x24, 2px padding",
   "stroke": "1.5-2px, rounded caps/joins",
   "categories": [
     {
       "name": "Infrastructure / Product",
       "icons": [
-        { "name": "Kubernetes / Container", "status": "planned" },
-        { "name": "Compute", "status": "planned" },
-        { "name": "Storage", "status": "planned" },
-        { "name": "Network", "status": "planned" },
-        { "name": "Cloud", "status": "planned" },
-        { "name": "Hybrid / Multi-cloud", "status": "planned" },
-        { "name": "Security / Shield", "status": "planned" },
-        { "name": "AI / ML", "status": "planned" },
-        { "name": "Automation / GitOps", "status": "planned" },
-        { "name": "Monitoring / Observability", "status": "planned" },
-        { "name": "Scale / Elasticity", "status": "planned" },
-        { "name": "Data Pipeline", "status": "planned" },
-        { "name": "API / Integration", "status": "planned" },
-        { "name": "Uptime / Reliability", "status": "planned" },
-        { "name": "Cost / Efficiency", "status": "planned" }
+        {
+          "name": "Kubernetes / Container",
+          "status": "built",
+          "lucideSlug": "container",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z\" /><path d=\"M10 21.9V14L2.1 9.1\" /><path d=\"m10 14 11.9-6.9\" /><path d=\"M14 19.8v-8.1\" /><path d=\"M18 17.5V9.4\" /></svg>",
+          "note": "Generic container mark \u2014 not the Kubernetes logo. Hand-draw a proper K8s glyph if literal branding is needed."
+        },
+        {
+          "name": "Compute",
+          "status": "built",
+          "lucideSlug": "cpu",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M12 20v2\" /><path d=\"M12 2v2\" /><path d=\"M17 20v2\" /><path d=\"M17 2v2\" /><path d=\"M2 12h2\" /><path d=\"M2 17h2\" /><path d=\"M2 7h2\" /><path d=\"M20 12h2\" /><path d=\"M20 17h2\" /><path d=\"M20 7h2\" /><path d=\"M7 20v2\" /><path d=\"M7 2v2\" /><rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\" /><rect x=\"8\" y=\"8\" width=\"8\" height=\"8\" rx=\"1\" /></svg>"
+        },
+        {
+          "name": "Storage",
+          "status": "built",
+          "lucideSlug": "hard-drive",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M10 16h.01\" /><path d=\"M2.212 11.577a2 2 0 0 0-.212.896V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5.527a2 2 0 0 0-.212-.896L18.55 5.11A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z\" /><path d=\"M21.946 12.013H2.054\" /><path d=\"M6 16h.01\" /></svg>"
+        },
+        {
+          "name": "Network",
+          "status": "built",
+          "lucideSlug": "network",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><rect x=\"16\" y=\"16\" width=\"6\" height=\"6\" rx=\"1\" /><rect x=\"2\" y=\"16\" width=\"6\" height=\"6\" rx=\"1\" /><rect x=\"9\" y=\"2\" width=\"6\" height=\"6\" rx=\"1\" /><path d=\"M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3\" /><path d=\"M12 12V8\" /></svg>"
+        },
+        {
+          "name": "Cloud",
+          "status": "built",
+          "lucideSlug": "cloud",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z\" /></svg>"
+        },
+        {
+          "name": "Hybrid / Multi-cloud",
+          "status": "planned",
+          "note": "No direct Lucide equivalent \u2014 needs custom drawing on the same grid/stroke spec."
+        },
+        {
+          "name": "Security / Shield",
+          "status": "built",
+          "lucideSlug": "shield",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\" /></svg>"
+        },
+        {
+          "name": "AI / ML",
+          "status": "built",
+          "lucideSlug": "brain-circuit",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z\" /><path d=\"M9 13a4.5 4.5 0 0 0 3-4\" /><path d=\"M6.003 5.125A3 3 0 0 0 6.401 6.5\" /><path d=\"M3.477 10.896a4 4 0 0 1 .585-.396\" /><path d=\"M6 18a4 4 0 0 1-1.967-.516\" /><path d=\"M12 13h4\" /><path d=\"M12 18h6a2 2 0 0 1 2 2v1\" /><path d=\"M12 8h8\" /><path d=\"M16 8V5a2 2 0 0 1 2-2\" /><circle cx=\"16\" cy=\"13\" r=\".5\" /><circle cx=\"18\" cy=\"3\" r=\".5\" /><circle cx=\"20\" cy=\"21\" r=\".5\" /><circle cx=\"20\" cy=\"8\" r=\".5\" /></svg>"
+        },
+        {
+          "name": "Automation / GitOps",
+          "status": "built",
+          "lucideSlug": "workflow",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><rect width=\"8\" height=\"8\" x=\"3\" y=\"3\" rx=\"2\" /><path d=\"M7 11v4a2 2 0 0 0 2 2h4\" /><rect width=\"8\" height=\"8\" x=\"13\" y=\"13\" rx=\"2\" /></svg>"
+        },
+        {
+          "name": "Monitoring / Observability",
+          "status": "built",
+          "lucideSlug": "activity",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\" /></svg>"
+        },
+        {
+          "name": "Scale / Elasticity",
+          "status": "built",
+          "lucideSlug": "expand",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"m15 15 6 6\" /><path d=\"m15 9 6-6\" /><path d=\"M21 16v5h-5\" /><path d=\"M21 8V3h-5\" /><path d=\"M3 16v5h5\" /><path d=\"m3 21 6-6\" /><path d=\"M3 8V3h5\" /><path d=\"M9 9 3 3\" /></svg>"
+        },
+        {
+          "name": "Data Pipeline",
+          "status": "built",
+          "lucideSlug": "waypoints",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"m10.586 5.414-5.172 5.172\" /><path d=\"m18.586 13.414-5.172 5.172\" /><path d=\"M6 12h12\" /><circle cx=\"12\" cy=\"20\" r=\"2\" /><circle cx=\"12\" cy=\"4\" r=\"2\" /><circle cx=\"20\" cy=\"12\" r=\"2\" /><circle cx=\"4\" cy=\"12\" r=\"2\" /></svg>"
+        },
+        {
+          "name": "API / Integration",
+          "status": "built",
+          "lucideSlug": "webhook",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2\" /><path d=\"m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06\" /><path d=\"m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8\" /></svg>"
+        },
+        {
+          "name": "Uptime / Reliability",
+          "status": "built",
+          "lucideSlug": "check-circle",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M21.801 10A10 10 0 1 1 17 3.335\" /><path d=\"m9 11 3 3L22 4\" /></svg>"
+        },
+        {
+          "name": "Cost / Efficiency",
+          "status": "built",
+          "lucideSlug": "gauge",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"m12 14 4-4\" /><path d=\"M3.34 19a10 10 0 1 1 17.32 0\" /></svg>"
+        }
       ]
     },
     {
       "name": "Status",
       "icons": [
-        { "name": "Success / Checkmark", "status": "planned" },
-        { "name": "Warning", "status": "planned" },
-        { "name": "Error", "status": "planned" },
-        { "name": "Info", "status": "planned" }
+        {
+          "name": "Success / Checkmark",
+          "status": "built",
+          "lucideSlug": "check",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M20 6 9 17l-5-5\" /></svg>"
+        },
+        {
+          "name": "Warning",
+          "status": "built",
+          "lucideSlug": "alert-triangle",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\" /><path d=\"M12 9v4\" /><path d=\"M12 17h.01\" /></svg>"
+        },
+        {
+          "name": "Error",
+          "status": "built",
+          "lucideSlug": "x-circle",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><circle cx=\"12\" cy=\"12\" r=\"10\" /><path d=\"m15 9-6 6\" /><path d=\"m9 9 6 6\" /></svg>"
+        },
+        {
+          "name": "Info",
+          "status": "built",
+          "lucideSlug": "info",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><circle cx=\"12\" cy=\"12\" r=\"10\" /><path d=\"M12 16v-4\" /><path d=\"M12 8h.01\" /></svg>"
+        }
       ]
     },
     {
       "name": "Generic UI / Document Furniture",
       "icons": [
-        { "name": "Arrow (multi-direction)", "status": "planned" },
-        { "name": "External Link", "status": "planned" },
-        { "name": "Download", "status": "planned" },
-        { "name": "Expand / Collapse", "status": "planned" },
-        { "name": "Quote Mark", "status": "planned" },
-        { "name": "Close / Dismiss", "status": "planned" }
+        {
+          "name": "Arrow (multi-direction)",
+          "status": "built",
+          "lucideSlug": "arrow-right",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M5 12h14\" /><path d=\"m12 5 7 7-7 7\" /></svg>",
+          "note": "Primary direction shown; arrow-left/up/down are the same family in the Lucide set if others are needed."
+        },
+        {
+          "name": "External Link",
+          "status": "built",
+          "lucideSlug": "external-link",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M15 3h6v6\" /><path d=\"M10 14 21 3\" /><path d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\" /></svg>"
+        },
+        {
+          "name": "Download",
+          "status": "built",
+          "lucideSlug": "download",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M12 15V3\" /><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\" /><path d=\"m7 10 5 5 5-5\" /></svg>"
+        },
+        {
+          "name": "Expand / Collapse",
+          "status": "built",
+          "lucideSlug": "chevron-down",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"m6 9 6 6 6-6\" /></svg>"
+        },
+        {
+          "name": "Quote Mark",
+          "status": "built",
+          "lucideSlug": "quote",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z\" /><path d=\"M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z\" /></svg>"
+        },
+        {
+          "name": "Close / Dismiss",
+          "status": "built",
+          "lucideSlug": "x",
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M18 6 6 18\" /><path d=\"m6 6 12 12\" /></svg>"
+        }
       ]
     }
-  ]
+  ],
+  "strokeWidth": "1.5px (standardized from Lucide's default 2px to match FusionX spec)"
 }

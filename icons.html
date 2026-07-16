@@ -21,7 +21,7 @@
       <a href="icons.html" class="active">Icons</a>
       <a href="imagery.html">Imagery</a>
     </nav>
-    <span class="badge">v1.0 · Proposed</span>
+    <span class="badge">v1.1 · 24 / 25 built</span>
   </div>
 </header>
 
@@ -30,11 +30,11 @@
 
     <section class="hero">
       <span class="eyebrow">Icon System</span>
-      <h1>Spec and inventory — nothing built yet.</h1>
-      <p class="lede">This page is a proposal, not a shipped asset library. <span id="icon-progress" class="mono"></span> — tracked live from <code>data/icons.json</code>. Flip an icon's status to "built" as the library gets produced and this page updates automatically.</p>
+      <h1>First pass built — sourced from Lucide, restyled to spec.</h1>
+      <p class="lede"><span id="icon-progress" class="mono"></span> — tracked live from <code>data/icons.json</code>. Click any built icon below to copy its SVG markup; the same files also live in <code>assets/icons/</code> for direct import into InDesign or Figma. Still a first pass — treat as ready to use, not final polish.</p>
     </section>
 
-    <div class="status-banner">⚠ Proposed direction — confirm before build starts</div>
+    <div class="status-banner status-banner--success">✓ 24 of 25 icons built · 1 needs custom drawing (see inventory)</div>
 
     <section>
       <h2>Why icons get their own spec</h2>
@@ -54,13 +54,15 @@
     </section>
 
     <section>
-      <h2>Recommended production method</h2>
-      <p>Don't hand-draw 25 icons from scratch, and don't generate them with AI tools. Fastest path to a consistent, professional set: start from an open-source icon library built on this exact philosophy and restyle it to FusionX's stroke weight and color tokens.</p>
-      <p><strong>Lucide</strong> (MIT license, free, 1000+ icons, fork of Feather Icons) is the strongest starting point — pull the icons needed, adjust stroke/color to the tokens on the <a href="colors.html">Color page</a>, and hand-draw only the infrastructure-specific concepts a generic UI set won't have (Kubernetes, hybrid-cloud, GitOps).</p>
+      <h2>Production method</h2>
+      <p>Sourced from <strong>Lucide</strong> (ISC license — free for commercial use, no attribution required, ~1,700 icons, a maintained fork of Feather Icons) rather than hand-drawn or AI-generated. Each matched icon was pulled from the <code>lucide-static</code> package, stripped of its default class/license comment, and had its stroke weight standardized from Lucide's default 2px down to 1.5px to match the FusionX spec — one consistent weight across the set, per the design rules above.</p>
+      <p>Icons render inline via <code>currentColor</code>, so the same file can show as Lime, Secondary Text, or a Status color just by the CSS class wrapping it — no separate colored copies needed for web/HTML collateral. For InDesign, place the raw file from <code>assets/icons/</code>, ungroup, and apply a stroke swatch from the color library directly, since these are stroke-only paths with no fill.</p>
+      <p>One concept — <strong>Hybrid / Multi-cloud</strong> — has no direct Lucide equivalent and still needs hand-drawing on the same grid/stroke spec, along with a literal Kubernetes mark if brand-accurate K8s iconography is ever required (the current "Kubernetes / Container" entry uses a generic container glyph as a placeholder, not the K8s logo).</p>
     </section>
 
     <section>
       <h2>Inventory (~25 icons, first pass)</h2>
+      <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:-8px;">Click a built icon to copy its SVG markup. Hover for a note where one applies.</p>
       <div id="icon-categories">
         <p>Loading inventory…</p>
       </div>

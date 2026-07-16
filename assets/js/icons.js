@@ -1,6 +1,8 @@
 // Renders the icon inventory from data/icons.json — the single source of truth
-// for what's planned vs. built. Flip an icon's "status" to "built" (and add an
-// "svg" path once real assets exist) as the library gets produced.
+// for what's planned vs. built. Built icons carry real Lucide-sourced SVG markup
+// (stroke normalized to the FusionX 1.5px spec) in the "svg" field, plus a
+// "lucideSlug" pointing at the matching file saved in assets/icons/. Icons with
+// no direct Lucide equivalent stay "planned" with a "note" explaining why.
 
 async function renderIcons() {
   const container = document.getElementById("icon-categories");
@@ -34,9 +36,17 @@ async function renderIcons() {
           const isBuilt = icon.status === "built";
           const pillClass = isBuilt ? "status-built" : "status-planned";
           const label = isBuilt ? "Built" : "Planned";
+          const glyph = isBuilt
+            ? `<span class="icon-glyph">${icon.svg}</span>`
+            : `<span class="icon-glyph icon-glyph--empty">?</span>`;
+          const noteAttr = icon.note
+            ? ` title="${icon.note.replace(/"/g, "&quot;")}"`
+            : "";
+          const copyAttr = isBuilt ? ` data-svg="${encodeURIComponent(icon.svg)}"` : "";
           return `
-          <div class="icon-row">
-            <span>${icon.name}</span>
+          <div class="icon-row${isBuilt ? " icon-row--copyable" : ""}"${noteAttr}${copyAttr}>
+            ${glyph}
+            <span class="icon-row-name">${icon.name}</span>
             <span class="status-pill ${pillClass}">${label}</span>
           </div>`;
         })
@@ -48,6 +58,21 @@ async function renderIcons() {
         </section>`;
     })
     .join("");
+
+  container.querySelectorAll(".icon-row--copyable").forEach((row) => {
+    row.addEventListener("click", async () => {
+      const svg = decodeURIComponent(row.dataset.svg);
+      try {
+        await navigator.clipboard.writeText(svg);
+        const pill = row.querySelector(".status-pill");
+        const original = pill.textContent;
+        pill.textContent = "Copied!";
+        setTimeout(() => (pill.textContent = original), 1200);
+      } catch (err) {
+        console.warn("Clipboard write failed", err);
+      }
+    });
+  });
 }
 
 renderIcons();
