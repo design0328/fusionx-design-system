@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typography — FusionX Design System</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Libre+Franklin:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> FusionX Design System</div>
+    <nav class="site-nav">
+      <a href="index.html">Overview</a>
+      <a href="colors.html">Color</a>
+      <a href="typography.html" class="active">Type</a>
+      <a href="icons.html">Icons</a>
+      <a href="imagery.html">Imagery</a>
+    </nav>
+    <span class="badge">v1.2 · From production</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Typography</span>
+      <h1>Not designed here — transcribed from what's shipping.</h1>
+      <p class="lede">Every spec below is pulled directly from the FX-* paragraph styles inside <code>FusionX_GEV_Sales_Brief_v2.indd</code>, a real brief in production. Edit <code>data/typography.json</code> to update a value here.</p>
+    </section>
+
+    <section>
+      <h2>Font roles</h2>
+      <div class="grid grid-3" id="font-roles">
+        <p>Loading…</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Getting the fonts</h2>
+      <p><strong>Montserrat</strong> is synced via Adobe Fonts in the source InDesign file, not embedded locally — make sure it's activated in Creative Cloud before opening FusionX documents, or the file will substitute a placeholder font. <strong>Libre Franklin</strong> and <strong>JetBrains Mono</strong> are both locally embedded (variable font builds) and travel with the packaged InDesign file. All three are open-source and available on Google Fonts for web/HTML collateral and this site — though for InDesign work, match the exact style/weight names shown below rather than assuming Google's naming lines up one-to-one with Adobe Fonts' style list.</p>
+    </section>
+
+    <section>
+      <h2>Paragraph styles</h2>
+      <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:-8px;">Rendered live in the actual fonts. <span class="status-pill status-planned">check spec</span> flags a value worth double-checking against intent, not a broken one.</p>
+      <div id="type-specimens">
+        <p>Loading specimens…</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Diamanti FusionX Publishing System — v1.2, last updated July 2026.
+  </div>
+</footer>
+
+<script src="assets/js/typography.js"></script>
+</body>
+</html>

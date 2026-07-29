@@ -19,9 +19,11 @@
   --warning: #f2c94c;
   --error: #e74c3c;
   --info: #2492c3;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-display: "Space Grotesk", var(--font-body);
-  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  /* Real FusionX production fonts (transcribed from FX-* paragraph styles in
+     shipping InDesign briefs) — this site uses the same pairing it documents. */
+  --font-body: "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Montserrat", var(--font-body);
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
   --radius: 10px;
   --max-width: 1120px;
 }
@@ -411,6 +413,44 @@ pre {
 .status-banner--success {
   color: var(--success);
   border-color: var(--success);
+}
+
+/* ---------- Type specimens (rendered by typography.js) ---------- */
+
+.type-specimen {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 20px 24px;
+  margin-bottom: 14px;
+}
+
+.type-specimen-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.type-specimen-name {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.type-specimen-preview {
+  color: var(--text);
+  overflow-wrap: break-word;
+  margin-bottom: 8px;
+}
+
+.type-specimen-usage {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin: 0;
 }
 
 ul.plain {

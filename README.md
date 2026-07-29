@@ -2,7 +2,7 @@
 
 A living, data-driven design system site for Diamanti's FusionX publishing collateral. Plain HTML/CSS/JS, no build step, deployed via GitHub Pages. Color tokens and icon inventory render from JSON files — edit the data, every page updates.
 
-**Status:** v1.0 draft, proposed — not yet shared with the Diamanti team. See `index.html` for context on why this exists.
+**Status:** v1.2, proposed — not yet shared with the Diamanti team. See `index.html` for context on why this exists.
 
 ## Structure
 
@@ -10,16 +10,21 @@ A living, data-driven design system site for Diamanti's FusionX publishing colla
 /
 ├── index.html          overview / landing page
 ├── colors.html          live color token reference (renders from data/tokens.json)
+├── typography.html       live type specimens (renders from data/typography.json)
 ├── icons.html            icon system spec + inventory (renders from data/icons.json)
 ├── imagery.html          imagery/prompt system + collateral matrix
 ├── data/
 │   ├── tokens.json        SOURCE OF TRUTH for all color tokens
+│   ├── typography.json    SOURCE OF TRUTH for paragraph styles (transcribed from InDesign)
 │   └── icons.json         SOURCE OF TRUTH for icon inventory + build status
 ├── assets/
-│   ├── css/style.css       shared site stylesheet
+│   ├── css/style.css       shared site stylesheet (fonts = real production pairing)
 │   ├── js/tokens.js        renders colors.html from tokens.json
+│   ├── js/typography.js    renders typography.html from typography.json
 │   ├── js/icons.js         renders icons.html from icons.json
-│   ├── icons/              (empty) actual icon SVGs land here once built
+│   ├── icons/              real Lucide-sourced SVGs (70 of 71 built, see LICENSE-ICONS.md)
+│   │   ├── on-dark/on-light/accent-green/   pre-baked color variants (for InDesign etc.)
+│   │   └── {variant}/png/{24,128,512}/       PNG rasters of each variant, transparent bg
 │   └── images/              (empty) generated/photography assets, organized by role
 │       ├── hero-cover/
 │       ├── section-divider/

@@ -1,0 +1,115 @@
+{
+  "source": "Transcribed directly from FX-* Paragraph Style Options in FusionX_GEV_Sales_Brief_v2.indd — not designed fresh, this is what's actually shipping.",
+  "lastVerified": "2026-07-16",
+  "fontRoles": [
+    {
+      "role": "Headline / Label",
+      "family": "Montserrat",
+      "note": "Not in the InDesign package's embedded Document Fonts folder — it's synced via Adobe Fonts rather than a local file. Team members need Adobe Fonts activated in InDesign for this to resolve. Same open-source family is available on Google Fonts for web/HTML collateral and this site.",
+      "googleFonts": true
+    },
+    {
+      "role": "Body / Reading",
+      "family": "Libre Franklin",
+      "note": "Variable font (GX build), locally embedded and portable. Google Fonts hosts the standard Libre Franklin family — close enough for web use; confirm optical-size behavior matches if pixel-perfect parity matters.",
+      "googleFonts": true
+    },
+    {
+      "role": "Stat / Data",
+      "family": "JetBrains Mono",
+      "note": "Variable font, locally embedded and portable. Used only for FX-Stat — large numeric callouts, not general monospace/code use.",
+      "googleFonts": true
+    }
+  ],
+  "styles": [
+    {
+      "name": "FX-H1",
+      "role": "Headline",
+      "family": "Montserrat",
+      "style": "Bold",
+      "size": "24pt",
+      "leading": "27pt",
+      "tracking": -20,
+      "case": "Normal",
+      "usage": "Primary page/section headline"
+    },
+    {
+      "name": "FX-H2",
+      "role": "Headline",
+      "family": "Montserrat",
+      "style": "SemiBold",
+      "size": "10pt",
+      "leading": "15pt",
+      "tracking": 0,
+      "case": "Normal",
+      "usage": "Secondary headline — note: same point size as FX-Body, differentiated by family/weight only. Worth confirming this is intentional.",
+      "flag": true
+    },
+    {
+      "name": "FX-section label",
+      "role": "Label",
+      "family": "Montserrat",
+      "style": "Light",
+      "size": "10pt",
+      "leading": "14pt",
+      "tracking": 10,
+      "case": "All Caps",
+      "usage": "Section eyebrow/kicker label"
+    },
+    {
+      "name": "FX-subhead",
+      "role": "Headline",
+      "family": "Montserrat",
+      "style": "SemiBold",
+      "size": "12pt",
+      "leading": "14.4pt (auto)",
+      "tracking": 25,
+      "case": "Normal",
+      "usage": "Subhead beneath H1/H2, wide tracking for emphasis at small size"
+    },
+    {
+      "name": "FX-Body",
+      "role": "Body",
+      "family": "Libre Franklin",
+      "style": "Regular",
+      "size": "10pt",
+      "leading": "12pt (auto)",
+      "tracking": 0,
+      "case": "Normal",
+      "usage": "Primary reading copy"
+    },
+    {
+      "name": "FX-Body3",
+      "role": "Body",
+      "family": "Libre Franklin",
+      "style": "Regular",
+      "size": "10pt",
+      "leading": "15pt",
+      "tracking": 0,
+      "case": "Normal",
+      "usage": "Body variant with looser leading — likely for denser blocks or sidebar copy"
+    },
+    {
+      "name": "FX-Caption",
+      "role": "Caption",
+      "family": "Libre Franklin",
+      "style": "Regular",
+      "size": "8pt",
+      "leading": "12pt",
+      "tracking": 0,
+      "case": "Normal",
+      "usage": "Image captions, footnotes, fine print"
+    },
+    {
+      "name": "FX-Stat",
+      "role": "Stat",
+      "family": "JetBrains Mono",
+      "style": "ExtraBold",
+      "size": "30pt",
+      "leading": "48pt",
+      "tracking": -30,
+      "case": "Normal",
+      "usage": "Large numeric stat callouts — tight negative tracking for a dense, technical mark"
+    }
+  ]
+}

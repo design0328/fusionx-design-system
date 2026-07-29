@@ -32,7 +32,7 @@
     <section class="hero">
       <span class="eyebrow">Icon System</span>
       <h1>First pass built — sourced from Lucide, restyled to spec.</h1>
-      <p class="lede"><span id="icon-progress" class="mono"></span> — tracked live from <code>data/icons.json</code>. Click any built icon below to copy its SVG markup; the same files also live in <code>assets/icons/</code> for direct import into InDesign or Figma. Still a first pass — treat as ready to use, not final polish.</p>
+      <p class="lede"><span id="icon-progress" class="mono"></span> — tracked live from <code>data/icons.json</code>. Click any built icon below to copy its SVG markup; the same files also live in <code>assets/icons/</code> for direct import into InDesign or Figma. PNG exports (24/128/512px, transparent background) are also available per color variant — see <code>assets/icons/on-dark/png/</code>, <code>on-light/png/</code>, and <code>accent-green/png/</code>. Still a first pass — treat as ready to use, not final polish.</p>
     </section>
 
     <div class="status-banner status-banner--success">✓ 70 of 71 icons built · 1 needs custom drawing (see inventory)</div>
@@ -58,6 +58,7 @@
       <h2>Production method</h2>
       <p>Sourced from <strong>Lucide</strong> (ISC license — free for commercial use, no attribution required, ~1,700 icons, a maintained fork of Feather Icons) rather than hand-drawn or AI-generated. Each matched icon was pulled from the <code>lucide-static</code> package, stripped of its default class/license comment, and had its stroke weight standardized from Lucide's default 2px down to 1.5px to match the FusionX spec — one consistent weight across the set, per the design rules above.</p>
       <p>Icons render inline via <code>currentColor</code>, so the same file can show as Lime, Secondary Text, or a Status color just by the CSS class wrapping it — no separate colored copies needed for web/HTML collateral. <strong>This does not work in InDesign</strong> — <code>currentColor</code> is a browser/CSS concept with no equivalent there, so InDesign resolves it to a static black with no live link back to a swatch, and you can't recolor it through the Swatches panel like a native shape. For InDesign (or any placement outside a browser), use the pre-baked color variant folders instead: <code>assets/icons/on-dark/</code> (#F7F7F7, for dark or accent backgrounds), <code>assets/icons/on-light/</code> (#4D4D4D, for light backgrounds), and <code>assets/icons/accent-green/</code> (#6EE600, for brand-accent emphasis) — same filenames as the base set, color already fixed in the file, so InDesign just reads it correctly on place.</p>
+      <p>Each of those three color variant folders also has a <code>png/</code> subfolder with rasterized copies at 24px, 128px, and 512px, transparent background — for anywhere a vector file isn't accepted (Slack, docs, slides, PowerPoint). See <code>LICENSE-ICONS.md</code> for the exact paths.</p>
       <p>One concept — <strong>Hybrid / Multi-cloud</strong> — has no direct Lucide equivalent and still needs hand-drawing on the same grid/stroke spec, along with a literal Kubernetes mark if brand-accurate K8s iconography is ever required (the current "Kubernetes / Container" entry uses a generic container glyph as a placeholder, not the K8s logo).</p>
     </section>
 
