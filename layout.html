@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FusionX Layout System</title>
+<meta name="description" content="Diamanti FusionX — layout system: editorial and presentation composition patterns, reusable content structures.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Libre+Franklin:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> FusionX Design System</div>
+    <nav class="site-nav">
+      <a href="index.html">Overview</a>
+      <a href="colors.html">Color</a>
+      <a href="typography.html">Type</a>
+      <a href="icons.html">Icons</a>
+      <a href="imagery.html">Imagery</a>
+      <a href="layout.html" class="active">Layout</a>
+    </nav>
+    <span class="badge">v0.1 · Draft</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <span class="eyebrow">Publishing System</span>
+      <h1>Layout</h1>
+      <p class="lede">The FusionX Layout System defines how brand, content, imagery, data, and technical information are composed across briefs, brochures, presentations, and other publishing formats. It turns recurring production patterns into a consistent, scalable visual language.</p>
+      <p>This first draft is derived from existing FusionX collateral, not designed fresh. It will evolve as patterns are reviewed against real InDesign briefs and presentation decks, standardized, and formally approved.</p>
+      <span class="status-label">Draft · v0.1</span>
+    </section>
+
+    <section>
+      <h2>Overview</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Editorial</h3>
+          <p style="margin-bottom:0">Briefs, brochures, one-pagers, and print collateral.</p>
+        </div>
+        <div class="card">
+          <h3>Presentations</h3>
+          <p style="margin-bottom:0">Sales decks, executive presentations, investor materials, and technical storytelling.</p>
+        </div>
+        <div class="card">
+          <h3>Components</h3>
+          <p style="margin-bottom:0">Reusable content structures such as metric cards, feature blocks, callouts, diagrams, tables, and CTAs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Layout principles</h2>
+      <div class="grid grid-4">
+        <div class="card">
+          <h3>One dominant idea</h3>
+          <p style="margin-bottom:0">Every page or slide should have a clear primary message.</p>
+        </div>
+        <div class="card">
+          <h3>Hierarchy before decoration</h3>
+          <p style="margin-bottom:0">Structure, reading order, and emphasis should guide visual decisions.</p>
+        </div>
+        <div class="card">
+          <h3>Repeatable, not repetitive</h3>
+          <p style="margin-bottom:0">Patterns should create consistency while allowing appropriate variation.</p>
+        </div>
+        <div class="card">
+          <h3>Content determines density</h3>
+          <p style="margin-bottom:0">Layout density should reflect the purpose and complexity of the information.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Layout foundations</h2>
+      <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:-8px;">Every item below is a placeholder for a decision that hasn't been made yet — no measurements are set. Each is flagged for review against real production files rather than invented here.</p>
+      <div class="grid grid-4">
+        <div class="card foundation-card">
+          <h3>Formats <span class="status-pill status-review">To be documented</span></h3>
+          <p style="margin-bottom:0">Page and slide sizes in active use across brief, brochure, and deck formats.</p>
+        </div>
+        <div class="card foundation-card">
+          <h3>Grid <span class="status-pill status-review">In review</span></h3>
+          <p style="margin-bottom:0">Underlying column/baseline structure, once confirmed against shipping files.</p>
+        </div>
+        <div class="card foundation-card">
+          <h3>Margins and safe zones <span class="status-pill status-review">To be documented</span></h3>
+          <p style="margin-bottom:0">Page-edge and bleed clearances for print and screen formats.</p>
+        </div>
+        <div class="card foundation-card">
+          <h3>Columns and gutters <span class="status-pill status-review">To be documented</span></h3>
+          <p style="margin-bottom:0">Column counts and gutter widths for editorial vs. presentation layouts.</p>
+        </div>
+        <div class="card foundation-card">
+          <h3>Spacing <span class="status-pill status-review">In review</span></h3>
+          <p style="margin-bottom:0">A shared spacing scale between type, imagery, and components.</p>
+        </div>
+        <div class="card foundation-card">
+          <h3>Headers and footers <span class="status-pill status-review">To be documented</span></h3>
+          <p style="margin-bottom:0">Recurring furniture — section labels, page numbers, source lines.</p>
+        </div>
+        <div class="card foundation-card">
+          <h3>Dark and light compositions <span class="status-pill status-review">In review</span></h3>
+          <p style="margin-bottom:0">How layout structure adapts between the dark and light theme tokens.</p>
+        </div>
+        <div class="card foundation-card">
+          <h3>Density levels <span class="status-pill status-review">To be documented</span></h3>
+          <p style="margin-bottom:0">A shared vocabulary for low/medium/high density, tied to content type.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Page anatomy</h2>
+      <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:-8px;">Conceptual regions common to FusionX pages and slides — not exact templates, and not tied to specific measurements.</p>
+      <div class="grid grid-2">
+        <div class="card anatomy-card">
+          <h3>Editorial page anatomy</h3>
+          <ol>
+            <li>Section label</li>
+            <li>Primary headline</li>
+            <li>Supporting narrative</li>
+            <li>Visual or data region</li>
+            <li>Footer and page number</li>
+          </ol>
+        </div>
+        <div class="card anatomy-card">
+          <h3>Presentation slide anatomy</h3>
+          <ol>
+            <li>Context label</li>
+            <li>Slide headline</li>
+            <li>Core message</li>
+            <li>Supporting visual or proof</li>
+            <li>Source or footer region</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pattern library</h2>
+      <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:-8px;">Rendered live from <code>data/layouts.json</code>. Every entry here is provisional — see Status &amp; governance below before treating anything as approved.</p>
+
+      <div class="pattern-toolbar">
+        <div class="filter-group" id="family-filters" role="group" aria-label="Filter patterns by family">
+          <span class="filter-group-label">Family</span>
+          <button type="button" class="filter-btn is-active" data-value="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-value="editorial" aria-pressed="false">Editorial</button>
+          <button type="button" class="filter-btn" data-value="presentation" aria-pressed="false">Presentation</button>
+          <button type="button" class="filter-btn" data-value="component" aria-pressed="false">Component</button>
+        </div>
+        <div class="filter-group" id="status-filters" role="group" aria-label="Filter patterns by status">
+          <span class="filter-group-label">Status</span>
+          <button type="button" class="filter-btn is-active" data-value="all" aria-pressed="true">All statuses</button>
+          <button type="button" class="filter-btn" data-value="observed" aria-pressed="false">Observed</button>
+          <button type="button" class="filter-btn" data-value="candidate" aria-pressed="false">Candidate</button>
+          <button type="button" class="filter-btn" data-value="approved" aria-pressed="false">Approved</button>
+          <button type="button" class="filter-btn" data-value="deprecated" aria-pressed="false">Deprecated</button>
+        </div>
+      </div>
+
+      <div class="pattern-grid" id="pattern-grid">
+        <p>Loading patterns…</p>
+      </div>
+      <p class="pattern-empty" id="pattern-empty" hidden>No patterns match the current filters.</p>
+    </section>
+
+    <section>
+      <h2>Status and governance</h2>
+      <p>Every pattern in the library above carries one of four statuses. All initial patterns are provisional until the collateral audit is complete — treat "Candidate" and "Observed" as the working defaults, not "Approved."</p>
+      <div class="governance-list">
+        <div class="governance-item">
+          <span class="status-pill status-pill--observed">Observed</span>
+          <p style="margin:0;">Found in existing collateral but not yet standardized.</p>
+        </div>
+        <div class="governance-item">
+          <span class="status-pill status-pill--candidate">Candidate</span>
+          <p style="margin:0;">Repeated across multiple pieces and being evaluated as a reusable standard.</p>
+        </div>
+        <div class="governance-item">
+          <span class="status-pill status-pill--approved">Approved</span>
+          <p style="margin:0;">Reviewed and accepted as an official FusionX publishing pattern.</p>
+        </div>
+        <div class="governance-item">
+          <span class="status-pill status-pill--deprecated">Deprecated</span>
+          <p style="margin:0;">No longer recommended for new work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Next steps</h2>
+      <ul class="plain">
+        <li>Audit current InDesign briefs and presentation decks</li>
+        <li>Confirm grid and spacing foundations</li>
+        <li>Create pattern anatomy diagrams</li>
+        <li>Add real source examples</li>
+        <li>Approve canonical patterns</li>
+        <li>Connect documentation to production templates</li>
+      </ul>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    Diamanti FusionX Publishing System — v1.0 draft, last updated July 2026. Owner: Denky Begonja.
+  </div>
+</footer>
+
+<script src="assets/js/layouts.js"></script>
+</body>
+</html>

@@ -464,3 +464,206 @@ ul.plain li {
   color: var(--text-secondary);
   font-size: 0.9rem;
 }
+
+/* ---------- Focus states ---------- */
+
+a:focus-visible,
+button:focus-visible,
+.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Layout page: status label, principle/foundation cards ---------- */
+
+.status-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 4px 12px;
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+.foundation-card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.status-review {
+  color: var(--warning);
+  border: 1px solid var(--warning);
+}
+
+.status-pill--observed {
+  color: var(--info);
+  border: 1px solid var(--info);
+}
+
+.status-pill--candidate {
+  color: var(--warning);
+  border: 1px solid var(--warning);
+}
+
+.status-pill--approved {
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.status-pill--deprecated {
+  color: var(--text-secondary);
+  border: 1px dashed var(--border);
+}
+
+/* ---------- Anatomy cards ---------- */
+
+.anatomy-card ol {
+  margin: 0;
+  padding-left: 1.25em;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.anatomy-card li {
+  padding: 4px 0;
+}
+
+/* ---------- Pattern library (rendered by layouts.js) ---------- */
+
+.pattern-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-right: 4px;
+  align-self: center;
+}
+
+.filter-btn {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: border-color 0.12s, color 0.12s, background 0.12s;
+}
+
+.filter-btn:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.filter-btn.is-active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 500;
+}
+
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.pattern-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+
+.pattern-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.pattern-card-id {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.pattern-card-meta {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.pattern-list {
+  margin-top: 12px;
+}
+
+.pattern-list-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pattern-empty {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+}
+
+/* ---------- Governance / status definitions ---------- */
+
+.governance-list {
+  display: grid;
+  gap: 14px;
+}
+
+.governance-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: 14px;
+}
+
+@media (max-width: 640px) {
+  .governance-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}

@@ -13,22 +13,30 @@ A living, data-driven design system site for Diamanti's FusionX publishing colla
 ├── typography.html       live type specimens (renders from data/typography.json)
 ├── icons.html            icon system spec + inventory (renders from data/icons.json)
 ├── imagery.html          imagery/prompt system + collateral matrix
+├── layout.html           layout system: foundations, anatomy, pattern library (renders from data/layouts.json) — draft v0.1
 ├── data/
 │   ├── tokens.json        SOURCE OF TRUTH for all color tokens
 │   ├── typography.json    SOURCE OF TRUTH for paragraph styles (transcribed from InDesign)
-│   └── icons.json         SOURCE OF TRUTH for icon inventory + build status
+│   ├── icons.json         SOURCE OF TRUTH for icon inventory + build status
+│   └── layouts.json        SOURCE OF TRUTH for layout pattern library (draft, unaudited)
 ├── assets/
 │   ├── css/style.css       shared site stylesheet (fonts = real production pairing)
 │   ├── js/tokens.js        renders colors.html from tokens.json
 │   ├── js/typography.js    renders typography.html from typography.json
 │   ├── js/icons.js         renders icons.html from icons.json
+│   ├── js/layouts.js       renders layout.html's pattern library + filters from layouts.json
 │   ├── icons/              real Lucide-sourced SVGs (70 of 71 built, see LICENSE-ICONS.md)
 │   │   ├── on-dark/on-light/accent-green/   pre-baked color variants (for InDesign etc.)
 │   │   └── {variant}/png/{24,128,512}/       PNG rasters of each variant, transparent bg
-│   └── images/              (empty) generated/photography assets, organized by role
-│       ├── hero-cover/
-│       ├── section-divider/
-│       └── dataviz-background/
+│   ├── images/              (empty) generated/photography assets, organized by role
+│   │   ├── hero-cover/
+│   │   ├── section-divider/
+│   │   └── dataviz-background/
+│   └── layouts/             (empty) reference material for layout patterns, organized by role
+│       ├── editorial/
+│       ├── presentations/
+│       ├── components/
+│       └── anatomy/
 ├── CHANGELOG.md
 └── README.md
 ```
@@ -42,6 +50,8 @@ A living, data-driven design system site for Diamanti's FusionX publishing colla
 **To add a new page:** copy the structure of an existing page (shared header/nav markup, `assets/css/style.css` link) and add a nav link to it in the header of every existing page.
 
 **To add generated imagery:** save into the matching `/assets/images/` subfolder using the naming convention in `imagery.html`, then reference it from that page.
+
+**To update the layout pattern library:** edit `data/layouts.json` — every pattern card, filter, and status pill on `layout.html` renders from it. Layout documentation was introduced as a draft module (v0.1): structural foundation only, no invented grids, margins, or spacing values. Every pattern currently sits at `Observed` or `Candidate` status until the underlying InDesign briefs and presentation decks are audited and canonical patterns are formally approved.
 
 This repo is meant to be worked on with Claude Code in VS Code — point it at this folder and describe the change you want (e.g. "add a Typography page following the same pattern as colors.html").
 

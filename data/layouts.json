@@ -1,0 +1,202 @@
+{
+  "version": "0.1",
+  "updated": "2026-07",
+  "note": "Draft pattern library. All entries are provisional — statuses reflect a first pass, not a completed audit of FusionX InDesign briefs and presentation decks. See layout.html for governance definitions.",
+  "families": [
+    { "id": "editorial", "label": "Editorial" },
+    { "id": "presentation", "label": "Presentation" },
+    { "id": "component", "label": "Component" }
+  ],
+  "statuses": [
+    {
+      "id": "observed",
+      "label": "Observed",
+      "description": "Found in existing collateral but not yet standardized."
+    },
+    {
+      "id": "candidate",
+      "label": "Candidate",
+      "description": "Repeated across multiple pieces and being evaluated as a reusable standard."
+    },
+    {
+      "id": "approved",
+      "label": "Approved",
+      "description": "Reviewed and accepted as an official FusionX publishing pattern."
+    },
+    {
+      "id": "deprecated",
+      "label": "Deprecated",
+      "description": "No longer recommended for new work."
+    }
+  ],
+  "patterns": [
+    {
+      "id": "FX-L-001",
+      "name": "Image-Led Cover",
+      "family": "editorial",
+      "category": "Opening",
+      "status": "candidate",
+      "density": "Low",
+      "purpose": "Introduce a brief or publication with a strong visual statement and concise positioning.",
+      "bestFor": ["Buyer briefs", "Sales briefs", "Executive publications"],
+      "avoid": ["Dense summaries", "Technical diagrams", "Detailed comparisons"],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-L-002",
+      "name": "Executive Thesis + Metrics",
+      "family": "editorial",
+      "category": "Proof",
+      "status": "candidate",
+      "density": "Medium",
+      "purpose": "Introduce the central business argument and reinforce it with quantified proof.",
+      "bestFor": ["Executive summaries", "Opening interior pages", "Business-value narratives"],
+      "avoid": ["More than four primary metrics", "Detailed technical content", "Long-form case studies"],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-L-003",
+      "name": "Three-Offering Comparison",
+      "family": "editorial",
+      "category": "Comparison",
+      "status": "candidate",
+      "density": "Medium",
+      "purpose": "Compare three products, offerings, pillars, or solution areas within a consistent structure.",
+      "bestFor": ["Product families", "Solution pillars", "Capability comparisons"],
+      "avoid": ["Timelines", "Long narrative copy", "Unequal categories that cannot be compared consistently"],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-L-004",
+      "name": "Editorial Narrative",
+      "family": "editorial",
+      "category": "Narrative",
+      "status": "observed",
+      "density": "Medium",
+      "purpose": "Present a structured long-form argument with supporting imagery, callouts, or secondary content.",
+      "bestFor": ["Strategic narratives", "Market context", "Solution explanations"],
+      "avoid": ["Metric-heavy pages", "Detailed comparison tables", "Full architecture diagrams"],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-S-001",
+      "name": "Dark Hero Slide",
+      "family": "presentation",
+      "category": "Opening",
+      "status": "candidate",
+      "density": "Low",
+      "purpose": "Open a presentation or section with a clear statement and strong branded visual.",
+      "bestFor": ["Title slides", "Section openers", "Strategic statements"],
+      "avoid": ["Detailed data", "Multi-step workflows", "Dense supporting copy"],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-S-002",
+      "name": "Agenda",
+      "family": "presentation",
+      "category": "Navigation",
+      "status": "observed",
+      "density": "Low",
+      "purpose": "Establish the narrative structure of a presentation.",
+      "bestFor": ["Executive presentations", "Sales decks", "Workshops"],
+      "avoid": ["More sections than can be scanned quickly", "Detailed summaries", "Repeating on every section"],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-S-003",
+      "name": "Three-Card Challenge",
+      "family": "presentation",
+      "category": "Problem",
+      "status": "candidate",
+      "density": "Medium",
+      "purpose": "Present three related challenges, themes, risks, or opportunity areas.",
+      "bestFor": ["Business challenges", "Strategic pillars", "Key takeaways"],
+      "avoid": ["Sequential processes", "Uneven content lengths", "Detailed technical analysis"],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-S-004",
+      "name": "Problem → Solution → Benefits",
+      "family": "presentation",
+      "category": "Narrative",
+      "status": "candidate",
+      "density": "Medium",
+      "purpose": "Explain a transformation from current-state challenge to solution and measurable value.",
+      "bestFor": ["Sales storytelling", "Product positioning", "Executive summaries"],
+      "avoid": ["Complex architectures", "More than three narrative stages", "Unrelated benefits"],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-C-001",
+      "name": "Metric Card",
+      "family": "component",
+      "category": "Data",
+      "status": "candidate",
+      "density": "Low",
+      "purpose": "Highlight a single quantified proof point with a short supporting statement.",
+      "bestFor": [],
+      "avoid": [],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-C-002",
+      "name": "Feature Card",
+      "family": "component",
+      "category": "Capability",
+      "status": "candidate",
+      "density": "Medium",
+      "purpose": "Group a capability, benefit, or feature with an icon, title, and concise description.",
+      "bestFor": [],
+      "avoid": [],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-C-003",
+      "name": "Section Label",
+      "family": "component",
+      "category": "Navigation",
+      "status": "observed",
+      "density": "Low",
+      "purpose": "Provide context and orientation within a publication or presentation.",
+      "bestFor": [],
+      "avoid": [],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    },
+    {
+      "id": "FX-C-004",
+      "name": "CTA Panel",
+      "family": "component",
+      "category": "Closing",
+      "status": "observed",
+      "density": "Low",
+      "purpose": "Conclude a narrative with a clear next step or contact action.",
+      "bestFor": [],
+      "avoid": [],
+      "anatomy": [],
+      "sourceExamples": [],
+      "preview": ""
+    }
+  ]
+}
