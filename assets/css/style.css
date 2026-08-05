@@ -279,6 +279,27 @@ footer.site-footer {
 .swatch-card:hover .copy-hint { opacity: 1; }
 .swatch-card.copied .copy-hint { opacity: 1; color: var(--accent); }
 
+/* ---------- Compact swatch cards (brand-selector.html palette references) ---------- */
+
+.swatch-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin: 18px 0 10px;
+}
+
+.swatch-grid-sm {
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 10px;
+}
+
+.swatch-card--sm .swatch-fill { height: 46px; }
+.swatch-card--sm .swatch-meta { padding: 8px 10px; }
+.swatch-card--sm .swatch-name { font-size: 0.7rem; margin-bottom: 1px; }
+.swatch-card--sm .swatch-hex { font-size: 0.64rem; }
+
 /* ---------- Icon inventory (rendered by icons.js) ---------- */
 
 .icon-category {
