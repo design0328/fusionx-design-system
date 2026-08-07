@@ -95,6 +95,55 @@ no people, no stock-photo aesthetic, no glossy/plastic surfaces</pre>
     </section>
 
     <section>
+      <h2>Diagrams &amp; data visualization</h2>
+      <p>Distinct from the generative imagery above — diagrams, charts, tables, and infographics carry structured information, not decoration or credibility photography. They follow their own rule: <strong>single-accent tonal system, not multi-hue category coding.</strong> FusionX has one dedicated accent (Lime) and no dedicated secondary hue of its own — a second color is only ever borrowed from Corporate Blue, and only when a genuinely distinct data series or link requires it. Status colors are reserved for status and must never be repurposed as decorative category coding on a diagram.</p>
+      <table>
+        <tr><th>Do</th><th>Don't</th></tr>
+        <tr><td>One accent (Lime) carrying emphasis, everything else in the neutral ramp</td><td>A different saturated hue per layer/category "for legibility"</td></tr>
+        <tr><td>A second hue only for a genuinely distinct data series or link (Corporate Blue)</td><td>Borrowing Warning/Success/Error hues for decorative coding</td></tr>
+        <tr><td>Opacity/lightness steps of one hue for sequential or ranked data</td><td>Inventing new hues (gold, teal, etc.) that aren't in the token library</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Palette for diagrams &amp; charts</h2>
+      <table>
+        <tr><th>Role</th><th>Token</th><th>Hex</th></tr>
+        <tr><td>Primary accent</td><td>FUSIONX - Lime</td><td><code>#6EE600</code></td></tr>
+        <tr><td>Highlight-of-highlight (2–3 nodes max, never a fill)</td><td>FUSIONX - Lime Electric</td><td><code>#6DFF33</code></td></tr>
+        <tr><td>Secondary accent — distinct data series or links only</td><td>BRAND - Corporate Blue</td><td><code>#2492C3</code></td></tr>
+        <tr><td>Secondary accent, deeper variant</td><td>BRAND - Blue Dark</td><td><code>#0074A8</code></td></tr>
+        <tr><td>UI-interactive states only — not static diagrams</td><td>FUSIONX - Interactive Blue</td><td><code>#008CFF</code></td></tr>
+        <tr><td>Background</td><td>DARK - Background</td><td><code>#050809</code></td></tr>
+        <tr><td>Surface</td><td>DARK - Surface</td><td><code>#111417</code></td></tr>
+        <tr><td>Card / Card Alt</td><td>DARK - Card / Card Alt</td><td><code>#161A1F</code> / <code>#1D2228</code></td></tr>
+        <tr><td>Elevated surface</td><td>DARK - Elevated Surface</td><td><code>#1A1F24</code></td></tr>
+        <tr><td>Border / divider</td><td>DARK - Border / SYSTEM - Divider Dark</td><td><code>#2A3137</code> / <code>#2C3138</code></td></tr>
+        <tr><td>Secondary text</td><td>DARK - Secondary Text</td><td><code>#D7DEE3</code></td></tr>
+        <tr><td>Primary text</td><td>DARK - Primary Text</td><td><code>#FFFFFF</code></td></tr>
+        <tr><td>Status — success (reserved)</td><td>STATUS - Success</td><td><code>#3FB950</code></td></tr>
+        <tr><td>Status — warning (reserved)</td><td>STATUS - Warning / Warning (Darker)</td><td><code>#F2C94C</code> / <code>#ECA01D</code></td></tr>
+        <tr><td>Status — error (reserved)</td><td>STATUS - Error</td><td><code>#E74C3C</code></td></tr>
+        <tr><td>Status — info (reserved)</td><td>STATUS - Info</td><td><code>#2492C3</code></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Tonal ramp for sequential data</h2>
+      <p>For layer emphasis, heatmap intensity, table row shading, or progress states — Lime blended against the dark background at decreasing opacity, rather than switching hue.</p>
+      <table>
+        <tr><th>Opacity</th><th>Resulting hex on <code>#050809</code></th></tr>
+        <tr><td>100%</td><td><code>#6EE600</code></td></tr>
+        <tr><td>85%</td><td><code>#5EC501</code></td></tr>
+        <tr><td>65%</td><td><code>#499803</code></td></tr>
+        <tr><td>45%</td><td><code>#346C05</code></td></tr>
+        <tr><td>28%</td><td><code>#224606</code></td></tr>
+        <tr><td>16%</td><td><code>#162C08</code></td></tr>
+        <tr><td>8%</td><td><code>#0D1A08</code></td></tr>
+      </table>
+    </section>
+
+    <section>
       <h2>Still open</h2>
       <p>Icon library is built — 70 of 71 icons live at 1.5px stroke, sourced from Lucide (see <a href="icons.html">Icons page</a>). Illustration library and photography library are still on the roadmap and don't exist as built asset libraries yet; illustration library is next.</p>
     </section>
